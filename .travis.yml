@@ -1,12 +1,12 @@
 language: generic 
 services:
     - docker
-before-install:
+before_install:
     - docker build -t naveenvadlamudi176/frontend -f Dockerfile.dev .
 script:
     - docker run -e CI=true naveenvadlamudi176/frontend npm run test -- --coverage
 deploy:
-    provider: elastibeanstalk
+    provider: elasticbeanstalk
     region: "ap-south-1"
     app: "docker-react"
     env: " DockerReact-env"
