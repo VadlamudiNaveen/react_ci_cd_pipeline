@@ -18,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        <p>Naveen vadlamudi aa gaya rey...
+        Naveen gaadu thopu dammunte aapu...</p>
       </header>
     </div>
   );
